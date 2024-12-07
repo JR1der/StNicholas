@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #8c8cf8;
+  /*Тут потрібно стилізувати кольори*/
+  background-color: #a8b0ff;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,15 +17,16 @@ body {
 }
 
 .container {
-  border: #ddbdf6 solid 10px;
-  background-color: #ab8df2;
-  color: #9171dc;
-
-  font-family: "Protest Riot", sans-serif;
+  /*Тут потрібно стилізувати кольори*/
+  border: #ffcccc solid 6px;
+  background-color: #8c96fa;
+  color: #9bd6fa;
   border-radius: 10px;
+
+  font-family: "Pacifico", cursive;
   font-size: 36px;
-  width: 624px;
-  height: 351px;
+  width: 80%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,8 +48,9 @@ body {
 }
 
 .container a {
-  color: #853dd7;
-  background-color: #d5b0fd;
+    /*Тут потрібно стилізувати кольори*/
+  color: #9bd6fa;
+  background-color: #6475f7;
 
   text-decoration: none;
   border-radius: 4px;
@@ -56,8 +59,9 @@ body {
 }
 
 .container a:hover {
-  color: #dfb0f3;
-  background-color: #905acf;
+    /*Тут потрібно стилізувати кольори*/
+  color: #6475f7;
+  background-color: #9bd6fa;
 }
 
 @media screen and (max-width: 640px) {
@@ -84,7 +88,8 @@ body {
 }
 
 .snowflake {
-  background-color: #fff;
+    /*Тут потрібно стилізувати кольори*/
+  background-color: #9f3eff;
 
   position: absolute;
   width: 15px;
@@ -193,8 +198,9 @@ body {
 }
 
 .pop_up {
-  border: #ddbdf6 solid 6px;
-  background-color: #bebeff;
+    /*Тут потрібно стилізувати кольори*/
+  border: #d1dcf3 solid 6px;
+  background-color: #4747f6;
 
   position: absolute;
   text-align: center;
@@ -203,7 +209,7 @@ body {
   left: auto;
   right: auto;
   z-index: 5;
-  width: 300px;
+  width: 80%px;
   height: auto;
   padding: 10px;
   display: flex;
