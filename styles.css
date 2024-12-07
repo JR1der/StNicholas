@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #8c8cf8;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  border: #ddbdf6 solid 10px;
+  background-color: #ab8df2;
+  color: #9171dc;
+
+  font-family: "Protest Riot", sans-serif;
+  border-radius: 10px;
+  font-size: 36px;
+  width: 624px;
+  height: 351px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.container p {
+  margin: 20px;
+}
+
+.container .from_text {
+  font-size: 20px;
+}
+
+.link_text {
+  font-size: 30px;
+}
+
+.container a {
+  color: #853dd7;
+  background-color: #d5b0fd;
+
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 2px 4px;
+  transition: 0.3s ease-in-out 0s;
+}
+
+.container a:hover {
+  color: #dfb0f3;
+  background-color: #905acf;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    font-size: 30px;
+    width: 436px;
+    height: 241px;
+  }
+  .link_text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 350px;
+    height: 192px;
+  }
+}
+
+.snowflakes {
+  position: absolute;
+  z-index: 2;
+}
+
+.snowflake {
+  background-color: #fff;
+
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  clip-path: polygon(
+    50% 0%,
+    61% 38%,
+    100% 38%,
+    69% 61%,
+    79% 100%,
+    50% 75%,
+    21% 100%,
+    31% 61%,
+    0% 38%,
+    39% 38%
+  );
+  animation: fall 5s linear infinite;
+  opacity: 0;
+}
+
+.snowflakeOne {
+  left: auto;
+  right: auto;
+  animation-delay: 0.3s;
+}
+
+.snowflakeTwo {
+  left: 150px;
+  top: 110px;
+  animation-delay: 0.5s;
+}
+
+.snowflakeThree {
+  left: 85px;
+  top: 70px;
+  animation-delay: 0s;
+}
+
+.snowflakeFour {
+  right: 100px;
+  top: 130px;
+  animation-delay: 0s;
+}
+
+.snowflakeFive {
+  right: 180px;
+  top: 90px;
+  animation-delay: 0.7s;
+}
+
+.snowflakeSix {
+  right: 230px;
+  top: 120px;
+  animation-delay: 0s;
+}
+
+.snowflakeSeven {
+  left: 250px;
+  top: 100px;
+  animation-delay: 0s;
+}
+
+.snowflakeEight {
+  left: 180px;
+  top: 85px;
+  animation-delay: 0s;
+}
+
+.snowflakeNine {
+  left: 69px;
+  top: 46px;
+  animation-delay: 0s;
+}
+
+/* Snowflake animation */
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.3);
+
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 555;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop_up {
+  border: #ddbdf6 solid 6px;
+  background-color: #bebeff;
+
+  position: absolute;
+  text-align: center;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  z-index: 5;
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out 0.3;
+  display: auto;
+}
+
+.pop_up a {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.modal.fadeIn {
+  opacity: 1;
+}
